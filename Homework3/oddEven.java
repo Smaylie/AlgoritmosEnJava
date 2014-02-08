@@ -11,11 +11,8 @@ Dado un numero 'n' identifique si es par o impar
 public class oddEven {   
 
    public static void main(String[] args) {
-      
-      	String NF;
         int X;
-        NF = JOptionPane.showInputDialog("Ingrese un número");
-        X = Integer.parseInt(NF);
+        X = Integer.parseInt(args[0].toString());
         // si el numero es impar
         if (X % 2 != 0) {
                 System.out.println("numero es impar");}

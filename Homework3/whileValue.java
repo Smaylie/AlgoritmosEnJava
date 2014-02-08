@@ -11,10 +11,8 @@ Dado un numero mayor a cero, imprima el valor actual desde cero hasta antes de l
 public class whileValue {   
 
    public static void main(String[] args) {
-   	String NF;
         int Y;
-        NF = JOptionPane.showInputDialog("Ingrese un valor");
-        Y = Integer.parseInt(NF);
+        Y = Integer.parseInt(args[0].toString());
         int V = 0;
         while (V != Y) {
         System.out.println("El Valor Actual Es:" + V);

@@ -11,14 +11,10 @@ public class rangeSum {
 
    public static void main(String[] args) {
 
-	String NI;
         int X;
-        NI = JOptionPane.showInputDialog("Ingrese Rango Inferior");
-        X = Integer.parseInt(NI);
-        String NF;
+        X = Integer.parseInt(args[0].toString());
         int Y;
-        NF = JOptionPane.showInputDialog("Ingrese Rango Superior");
-        Y = Integer.parseInt(NF);
+        Y = Integer.parseInt(args[1].toString());
         int P = X;
         while (X != Y) {     
             if (P == X) {

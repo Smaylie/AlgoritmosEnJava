@@ -17,10 +17,8 @@ public class productToNumber {
    public static void main(String[] args) {
    	
 	int resultado = 1;
-        String NF;
         int X;
-        NF = JOptionPane.showInputDialog("Ingrese un número");
-        X = Integer.parseInt(NF);
+        X = Integer.parseInt(args[0].toString());
         for (int Px = 1; Px <= X; Px++) {
             resultado = resultado * Px;
         }

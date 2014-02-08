@@ -14,10 +14,8 @@ y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero
 public class FlipFlop {   
 
    public static void main(String[] args) {
-   		String NF;
-                int X;
-                NF = JOptionPane.showInputDialog("Ingrese un número");
-                X = Integer.parseInt(NF);
+   		int X;
+                X = Integer.parseInt(args[0].toString());
                 for (int numeroActual = 0; numeroActual <= X; numeroActual++)
                 {                
                 // si el numero es divisible dentro de 3 y 5 imprima "FlipFlop"
