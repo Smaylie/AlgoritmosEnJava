@@ -11,10 +11,22 @@ public class rangeSum {
 
    public static void main(String[] args) {
 
-		System.out.println("limites: "+args[0]+" "+args[1]);
-
-      
-         System.out.println("numero actual es:" );
+	String NI;
+        int X;
+        NI = JOptionPane.showInputDialog("Ingrese Rango Inferior");
+        X = Integer.parseInt(NI);
+        String NF;
+        int Y;
+        NF = JOptionPane.showInputDialog("Ingrese Rango Superior");
+        Y = Integer.parseInt(NF);
+        int P = X;
+        while (X != Y) {     
+            if (P == X) {
+                X++;
+            } else {
+            System.out.println(X);
+            X++;
+        }}
       
    }
 
